@@ -1,22 +1,51 @@
 import os
 
-# توکن ربات (بعداً در Render وارد می‌شود)
+# =========================
+# Bot Settings
+# =========================
+
 BOT_TOKEN = os.getenv("BOT_TOKEN", "")
-
-# شناسه مالک اصلی ربات
-OWNER_ID = 0
-
-# نام ربات
 BOT_NAME = "Marmah Bot"
 
-# کانال عضویت اجباری (اختیاری)
-FORCE_JOIN_CHANNEL = ""
+# شناسه عددی مالک اصلی
+OWNER_ID = int(os.getenv("OWNER_ID", "0"))
 
-# فعال بودن عضویت اجباری
-FORCE_JOIN = False
+# =========================
+# Database
+# =========================
 
-# دیتابیس
 DATABASE_NAME = "marmah.db"
 
-# حداکثر اخطار قبل از بن
+# =========================
+# Security
+# =========================
+
 MAX_WARNS = 3
+MAX_SPAM = 5
+SPAM_TIME = 10
+
+# =========================
+# Force Join
+# =========================
+
+FORCE_JOIN = False
+FORCE_JOIN_CHANNEL = ""
+
+# =========================
+# Coins
+# =========================
+
+START_COINS = 100
+DAILY_REWARD = 20
+
+# =========================
+# Welcome
+# =========================
+
+WELCOME_ENABLED = True
+
+# =========================
+# Logs
+# =========================
+
+LOGS_ENABLED = True
